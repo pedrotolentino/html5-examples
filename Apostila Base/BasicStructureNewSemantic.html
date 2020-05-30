@@ -1,0 +1,155 @@
+<!-- Identificador do HTML 5-->
+<!DOCTYPE html>
+
+<!--Início da marcação da paǵina HTML-->
+<html lang="pt-br">
+	<!--Cabeçalho da página-->
+	<head>
+		<meta charset="utf-8">
+		<title>Exemplo básico de estrutura e semântica do HTML 5</title>
+	</head>
+
+	<!--Corpo da página-->
+	<body>
+		<!--Tag "a" com o atributo "name" configura uma âncora. Essa estrutura permite a realização de links internos dentro da página-->
+		<a name="topo"></a>
+		<!--Tag de cabeçalho das informações do corpo-->
+		<header>
+			<h1>Cabeçalho da página</h1>
+			<h2>Subtítulo da página</h2>
+		</header>
+
+		<!--Tag de links de navegação-->
+		<nav>
+			<p>Aqui estão os links para navegação da página.
+			É possível ter links para dentro do mesmo documento, como por exemplo: <a href="#artigo" title="Link interno">Link para o artigo</a>, ou para páginas externas, como por exemplo: <a href="https://www.google.com" title="Link externo" target="_blank">Link para o google em aba externa</a></p>
+		</nav>
+
+		<!--Tag que indica o conteúdo principal da página. OBS.: ão é compatível com todos os navegadores-->
+		<main>
+			<header>
+				<h3>Início do elemento principal</h3>
+			</header>
+			<!--Tag que delimita uma seção na página-->
+			<section>
+				<h4>Início de seção</h4>
+				<!--Tag que indica o início de um artigo-->
+				<a name="artigo"></a>
+				<article>
+					<p>Esta parte é o <q>artigo</q>. Aqui fica o conteúdo principal de uma  página HTML5!<br/></p>
+					<p>Essa tag representa um bloco que contém o conteúdo principal do site, como texto, redação e demais informações.</p>
+				</article>
+				<!--Tag que indica a criação de uma tabela-->
+				<table border="1">
+					<!--Nome da tabela-->
+					<caption>Tabela de exemplo com preços de carros</caption>
+					<!--"thead" indica a linha de cabeçalho da tabela-->
+					<!--"tbody" indica o corpo da tabela-->
+					<!--"tfoot" indica o rodapé da tabele-->
+					<!--"tr" -> Acrônimo de "table row". Define uma linha na tabela-->
+					<!--"th" -> Indica uma célula com destaque-->
+					<!--"td" -> Indica uma célula sem destaque-->
+					<thead>
+						<tr>
+							<th>Montadora</th>
+							<th>Modelo</th>
+							<th>Preço</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Volkswagen</td>
+							<td>Gol</td>
+							<td>R$26.000,00</td>
+						</tr>
+						<tr>
+							<td>Fiat</td>
+							<td>Uno</td>
+							<td>R$17.200,00</td>
+						</tr>
+						<tr>
+							<td>Ford</td>
+							<td>Ka</td>
+							<td>R$11.900,00</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="2">Total</th>
+							<td>R$55.100,00</td>
+						</tr>
+					</tfoot>
+				</table>
+				<br/>
+				<table border="2">
+					<caption>Tabela de prática do conteúdo</caption>
+					<thead>
+						<tr>
+							<th rowspan="3"> Dia</th>
+							<th colspan="3">Seminário: Desenvolvimento de sistemas com PHP</th>
+						</tr>
+						<tr>
+							<th colspan="2">Agendamento</th>
+							<th rowspan="2">Tema</th>
+						</tr>
+						<tr>
+							<th>Início</th>
+							<th>Fim</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="2">Segunda-feira</td>
+							<td rowspan="2">09:00</td>
+							<td rowspan="2">10:30</td>
+							<td>Criação de páginas com HTML5</td>
+						</tr>
+						<tr>
+							<td>Criação de páginas com CSS3</td>
+						</tr>
+						<tr>
+							<td>Segunda-feira</td>
+							<td>11:00</td>
+							<td>11:50</td>
+							<td>Criação e validação de formulários com HTML5</td>
+						</tr>
+						<tr>
+							<td>Terça-feira</td>
+							<td>09:00</td>
+							<td>09:50</td>
+							<td>Introdução à linguagem PHP</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Terça-feira</td>
+							<td rowspan="2">10:00</td>
+							<td rowspan="2">11:50</td>
+							<td>Estruturas de controle na linguagem PHP</td>
+						</tr>
+						<tr>
+							<td>Outros comandos em PHP</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<footer>
+				<h3>Fim do elemento principal</h3>
+			</footer>
+		</main>
+
+		<!--Tag que indica uma área que não pertence ao fluxo principal-->
+		<aside>
+			<dl>
+				<dt>Lista de definição</dt>
+					<dd>Definição 1</dd>
+					<dd>Definição 2</dd>
+					<dd>Definição 3</dd>
+			</dl>
+		</aside>
+		
+		<!--Tag que indica o rodapé do corpo da página-->
+		<footer>
+			<h2>Aqui é o rodapé da página!</h2>
+			<a href="#topo">Voltar para o início da página</a>
+		</footer>
+	</body>
+</html>
