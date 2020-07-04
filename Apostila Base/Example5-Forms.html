@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trabalhando com formulários!!!</title>
+    </head>
+    <body bgcolor="#FFFFCC">
+        <center>Currículo ON-Line</center>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <table width="50%" align="center" border="0">
+                <tr>
+                    <td align="right">
+                        Nome:
+                    </td>
+                    <td>
+                        <input type="text" name="nome" size="40" maxlength="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Endereço:
+                    </td>
+                    <td>
+                    <input type="text" name="ende" size="40" maxlength="100"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Senha:
+                    </td>
+                    <td>
+                       <input type="password" name="senha" size="15" maxlength="6"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        &nbsp;
+                    </td>
+                    <td>
+                        <input type="checkbox" name="publicar" value="sim" checked>
+                        Quero que meu currículo seja público.
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Sexo:
+                    </td>
+                    <td>
+                        <input type="radio" name="sexo" value="Masculino">Masculino<br>
+                        <input type="radio" name="sexo" value="Feminino">Feminino
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Escolaridade:
+                    </td>
+                    <td>
+                        <select name="escolaridade">
+                            <option value="sup">Superior</option>
+                            <option value="2">2º Grau</option>
+                            <option value="1">1º Grau</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        Tecnologia:
+                    </td>
+                    <td>
+                        <select name="tecnologias" multiple size="3">
+                            <option value="php">PHP</option>
+                            <option value="html">HTML</option>
+                            <option value="js">Javascript</option>
+                            <option value="java">Java</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" name="enviar" value="Enviar">
+                        &nbsp;
+                        <input type="reset" name="limpar" value="Limpar">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>
